@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react"
 import Image from 'next/image'
 import { useEffect, useCallback } from 'react'
 
-export default function AgePage() {
+export default function Upload() {
   const [uploadedPhoto, setUploadedPhoto] = useState(null)
   const [showResults, setShowResults] = useState(false)
   const [selectedProfile, setSelectedProfile] = useState(null)
