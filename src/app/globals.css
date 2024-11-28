@@ -57,6 +57,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.background{
+  background-image: url(/blur-image.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 341px;
+
+}
+
 /* Keyframe for Marquee Animation */
 @keyframes marquee {
   0% {
