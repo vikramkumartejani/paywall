@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Top Navigation */}
       <div className="w-full flex justify-between items-center h-[80px]">
         <img src="/Group 16.png" />
-        <Link href='/age' className="bg-[#F54E26] text-white px-6 h-[36px] md:h-[45px] flex items-center justify-center gap-2 rounded-[5px] text-[20px] md:text-[24px] min-w-[128px] lg:min-w-[156px] font-bold tracking-[0.64px]">
+        <Link href='/login' className="bg-[#F54E26] text-white px-6 h-[36px] md:h-[45px] flex items-center justify-center gap-2 rounded-[5px] text-[20px] md:text-[24px] min-w-[128px] lg:min-w-[156px] font-bold tracking-[0.64px]">
            LOGIN 
            <Image src='/login-arrow.svg' alt="login-arrow" width={16} height={28} className="-mt-2 md:w-[16px] w-[12px]" />
         </Link>
@@ -16,11 +16,11 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="text-center pt-[67px] md:pt-[74px]">
         <h1 className="text-[40px] md:text-[80px] tracking-[0.8px] leading-[48px] md:leading-[90px] text-[#FFF6E8] font-[700]">
-          IS SOMETHING FEELING <span className="text-[#F54E26]">OFF?</span>,{" "}
-          <br />
-          FIND OUT WITH AI IF YOUR{" "}
-          <span className="text-[#F9BF28]">PARTNER</span>, <br />
-          IS <span className="text-[#F9BF28]">CHEATING.</span>
+            IS SOMETHING FEELING <span className="text-[#F54E26]">OFF?</span>,{" "}
+            <br />
+            FIND OUT WITH AI IF YOUR{" "}
+            <span className="text-[#F9BF28]">PARTNER</span>, <br />
+            IS <span className="text-[#F9BF28]">CHEATING.</span>
         </h1>
         <div className="mt-6">
           <div className="flex flex-col items-center justify-center">
