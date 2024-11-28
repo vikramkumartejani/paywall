@@ -6,7 +6,6 @@ import Image from "next/image";
 
 // Reviews Data
 const reviews = [
-
   {
     title: "sadly writing a good review",
     content:
@@ -108,10 +107,9 @@ export default function ScrollableReviews() {
       {/* Marquee Slider */}
       <div className="relative overflow-x-hidden w-full mt-[98px]">
         <div className="animate-marquee flex">
-          {/* Loop the reviews for continuous effect */}
           {[...reviews, ...reviews].map((review, index) => {
             const { title, content, name, location, relationship, bgColor } = review;
-            const textColors = getTextColor(bgColor); // Get text colors based on the bgColor
+            const textColors = getTextColor(bgColor);  
 
             return (
               <div
