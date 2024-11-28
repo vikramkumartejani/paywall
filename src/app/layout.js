@@ -30,6 +30,21 @@ export default function RootLayout({ children }) {
           type="font/ttf"
           crossOrigin=""
         />
+
+        <link
+          rel="preload"
+          href="/fonts/GothamRounded-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/GothamRounded-Bold.woff"
+          as="font"
+          type="font/woff"
+          crossOrigin=""
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </head>
       <body>{children}</body>

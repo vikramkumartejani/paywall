@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";  // Import Head from next/head
+import Head from "next/head";
 
 export default function Hero() {
   return (
@@ -74,4 +74,3 @@ export default function Hero() {
     </>
   );
 }
-  
