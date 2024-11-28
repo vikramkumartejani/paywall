@@ -84,20 +84,20 @@ export default function Home() {
           {/* Search Section */}
           <div
             ref={searchRef}
-            className={`bg-[#F54E26] w-full px-5 py-8 md:py-6 -mt-8 md:-mt-28 flex items-center flex-wrap justify-center gap-5 transition-all duration-300 ${
+            className={`bg-[#F54E26] w-full px-5 md:py-8 py-4 md:py-6 -mt-8 md:-mt-28 flex items-center flex-wrap justify-center gap-5 transition-all duration-300 ${
               isSticky
                 ? "fixed bottom-0 left-0 right-0 mt-0 z-50 shadow-lg"
                 : "relative z-40"
             }`}
           >
-            <h2 className="text-[36px] md:text-[60px] md:leading-[70.4px] font-bold tracking-[0.64px] uppercase text-white">
+            <h2 className="text-[24px] sm:text-[36px] md:text-[60px] md:leading-[70.4px] font-bold tracking-[0.64px] uppercase text-white">
               Who is the liar?
             </h2>
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-5">
               <input
                 type="text"
                 placeholder="Enter the first name here"
-                className="px-5 bg-[#FCFCFC] placeholder:text-black placeholder:text-[16px] leading-[70px] tracking-[0.64px] gotham-rounded font-medium outline-none h-[51px] md:h-[72px] w-[276px] rounded-lg -mt-2"
+                className="px-5 bg-[#FCFCFC] placeholder:text-black md:placeholder:text-[14px] md:placeholder:text-[16px] leading-[70px] tracking-[0.64px] gotham-rounded font-medium outline-none h-[40px] sm:h-[51px] md:h-[72px] w-[276px] rounded-lg -mt-2"
               />
               <h2 className="text-white text-[16px] md:text-[24px] text-nowrap md:leading-[70px] tracking-[0.64px] font-bold flex items-center gap-2 uppercase">
                 Search now
