@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.3",
-    "embla-carousel-react": "^8.5.1",
     "leaflet": "^1.9.4",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
