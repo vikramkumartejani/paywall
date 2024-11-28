@@ -93,7 +93,7 @@ export default function Home() {
             <h2 className="text-[36px] md:text-[60px] md:leading-[70.4px] font-bold tracking-[0.64px] uppercase text-white">
               Who is the liar?
             </h2>
-            <div className="flex items-center gap-2 sm:gap-5">
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-5">
               <input
                 type="text"
                 placeholder="Enter the first name here"
