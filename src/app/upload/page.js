@@ -93,50 +93,28 @@ export default function AgePage() {
         </div>
 
         {selectedProfile && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-5">
-            <div className="bg-[#1C1C1C] rounded-lg max-w-[300px] w-full mx-4">
-              <div className="relative   w-full overflow-hidden rounded-t-lg">
+          <div className="fixed inset-0  bg-black bg-opacity-50 flex items-center justify-center z-50 p-5" >
+            <div className=" rounded-lg max-w-[300px] w-full mx-4" style={{ background: "linear-gradient(180.04deg, rgba(115, 115, 115, 0) 40.01%, #181818 64.88%)" }}>
+              <div className="relative w-full overflow-hidden rounded-t-lg">
                 <Image
                   src={selectedProfile.image}
                   alt={selectedProfile.name}
                   objectFit="cover"
-                  width={500} 
+                  width={500}
                   height={300}
                   className="w-[300px] md:w-[500px] h-[200px]"
                 />
-              </div>
-
-            <div className="p-4">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between absolute bottom-2 left-2">
                   <h2 className="text-2xl font-bold">{selectedProfile.name}, {selectedProfile.age}</h2>
                 </div>
+              </div>
 
-                <div className="space-y-2 text-gray-300">
-                  <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-red-500" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                    </svg>
-                    <span>Paris</span>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <div className="h-4 w-4 rounded-full bg-green-500"></div>
-                    <span>Last online: yesterday</span>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <span>Premium member</span>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                    </svg>
-                    <span>Joined: 12/18/2024</span>
-                  </div>
+              <div className="p-4 pb-10">
+                <div className="flex items-start flex-col gap-4 text-white">
+                    <h2 className="text-[15px] leading-[15px] tracking-[0.64px] font-bold">📍 Paris</h2>
+                    <h2 className="text-[15px] leading-[15px] tracking-[0.64px] font-bold">🟢 Last online : yesterday</h2>
+                    <h2 className="text-[15px] leading-[15px] tracking-[0.64px] font-bold">⭐️ is premium? yes</h2>
+                    <h2 className="text-[15px] leading-[15px] tracking-[0.64px] font-bold">📝 When joined? 12/10/2024</h2>
                 </div>
               </div>
             </div>
@@ -187,7 +165,7 @@ export default function AgePage() {
             />
           </label>
 
-          
+
         </div>
 
         <div className="mt-12 fixed bottom-2 md:bottom-12 left-1/2 -translate-x-1/2 flex w-full px-4 md:px-9 justify-between gap-6">
