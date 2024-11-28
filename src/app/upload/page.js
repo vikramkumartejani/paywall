@@ -3,9 +3,8 @@
 import Link from "next/link"
 import React, { useState, useEffect } from "react"
 import Image from 'next/image'
-import { useEffect, useCallback } from 'react'
 
-export default function Upload() {
+export default function AgePage() {
   const [uploadedPhoto, setUploadedPhoto] = useState(null)
   const [showResults, setShowResults] = useState(false)
   const [selectedProfile, setSelectedProfile] = useState(null)
@@ -43,24 +42,6 @@ export default function Upload() {
   const closeModal = () => {
     setSelectedProfile(null)
   }
-
-  const handleOutsideClick = useCallback((e) => {
-    if (selectedProfile && !e.target.closest('.modal-content')) {
-      setSelectedProfile(null)
-    }
-  }, [selectedProfile])
-
-  useEffect(() => {
-    if (selectedProfile) {
-      document.addEventListener('mousedown', handleOutsideClick)
-    } else {
-      document.removeEventListener('mousedown', handleOutsideClick)
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleOutsideClick)
-    }
-  }, [selectedProfile, handleOutsideClick])
 
   if (showResults) {
     return (
@@ -113,17 +94,19 @@ export default function Upload() {
 
         {selectedProfile && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-5">
-            <div className="modal-content bg-[#1C1C1C] rounded-lg max-w-[300px] w-full mx-4">
-              <div className="relative aspect-square w-full overflow-hidden rounded-t-lg">
+            <div className="bg-[#1C1C1C] rounded-lg max-w-[300px] w-full mx-4">
+              <div className="relative   w-full overflow-hidden rounded-t-lg">
                 <Image
                   src={selectedProfile.image}
                   alt={selectedProfile.name}
-                  layout="fill"
                   objectFit="cover"
+                  width={500} 
+                  height={300}
+                  className="w-[300px] md:w-[500px] h-[200px]"
                 />
               </div>
 
-              <div className="p-4 space-y-4">
+            <div className="p-4">
                 <div className="flex items-center justify-between">
                   <h2 className="text-2xl font-bold">{selectedProfile.name}, {selectedProfile.age}</h2>
                 </div>
@@ -155,26 +138,6 @@ export default function Upload() {
                     <span>Joined: 12/18/2024</span>
                   </div>
                 </div>
-
-                <div className="grid grid-cols-3 gap-2 pt-4">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="aspect-square relative overflow-hidden rounded-lg bg-gray-800">
-                      <Image
-                        src={selectedProfile.image}
-                        alt={`Photo ${i}`}
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </div>
-                  ))}
-                </div>
-
-                <button
-                  onClick={closeModal}
-                  className="mt-4 w-full bg-[#DB4126] text-white px-4 py-2 rounded-full font-bold hover:bg-opacity-90 transition-colors"
-                >
-                  Close
-                </button>
               </div>
             </div>
           </div>
@@ -224,17 +187,7 @@ export default function Upload() {
             />
           </label>
 
-          {uploadedPhoto && (
-            <div className="mt-4">
-              <Image
-                src={uploadedPhoto}
-                alt="Uploaded photo"
-                width={300}
-                height={300}
-                className="object-cover rounded-lg"
-              />
-            </div>
-          )}
+          
         </div>
 
         <div className="mt-12 fixed bottom-2 md:bottom-12 left-1/2 -translate-x-1/2 flex w-full px-4 md:px-9 justify-between gap-6">
