@@ -13,7 +13,6 @@ export default function Home() {
       <div className="w-full">
         <Hero />
 
-        {/* Slider */}
         <div className="pb-32 md:pb-40 pt-20 ">
           <div
             style={{ transform: "rotate(8deg)", transformOrigin: "center" }}
@@ -28,22 +27,17 @@ export default function Home() {
                   let’s fight together the cheaters, liar, manipulator.
                 </h1>
               </div>
-              <div className="flex items-center whitespace-nowrap px-4">
-                <h1 className="uppercase tracking-[0.64px] text-[32px] md:text-[60px] font-bold leading-[70.4px]">
-                  let’s fight together the cheaters, liar, manipulator.
-                </h1>
-              </div>
             </div>
           </div>
 
           {/* Search Section */}
-          <div className="bg-[#F54E26] w-full px-5 relative z-40 py-8 md:py-6 -mt-8 md:-mt-28 flex items-center flex-wrap justify-center gap-5">
-            <h2 className="text-[36px] md:text-[60px] md:leading-[70.4px] font-bold tracking-[0.64px] uppercase text-white">Who is the liar?</h2>
+          <div className="bg-[#F54E26] w-full px-5 py-8 md:py-6 -mt-8 md:-mt-28 flex items-center flex-wrap justify-center gap-5  z-40">
+            <h2 className="text-[36px] md:text-[60px] leading-[70.4px] font-bold tracking-[0.64px] uppercase text-white">Who is the liar?</h2>
             <div className="flex items-center gap-2 sm:gap-5">
               <input
                 type="text"
                 placeholder="Enter the first name here"
-                className="px-5 bg-[#FCFCFC] placeholder:text-black placeholder:text-[16px] leading-[70px] tracking-[0.64px] gotham-rounded font-medium outline-none h-[51px] md:h-[72px] w-[276px] rounded-lg -mt-2"
+                className="px-5 bg-[#FCFCFC] placeholder:text-black placeholder:text-[16px] leading-[70px] tracking-[0.64px] gotham-rounded font-medium outline-none h-[51px] md:h-[72px] w-[276px] rounded-lg -mt-2 sticky "
               />
               <h2 className="text-white text-[16px] md:text-[24px] text-nowrap md:leading-[70px] tracking-[0.64px] font-bold flex items-center gap-2 uppercase">
                 Search now
