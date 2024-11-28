@@ -14,15 +14,23 @@ export default function RootLayout({ children }) {
           href="/fonts/FormulaCondensed-Bold.woff2"
           as="font"
           type="font/woff2"
-          crossOrigin="anonymous"
+          crossOrigin=""
         />
         <link
           rel="preload"
-          href="/fonts/Gotham-Rounded-Medium.woff2"
+          href="/fonts/FormulaCondensed-Bold.woff"
           as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
+          type="font/woff"
+          crossOrigin=""
         />
+        <link
+          rel="preload"
+          href="/fonts/FormulaCondensed-Bold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin=""
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </head>
       <body>{children}</body>
     </html>
