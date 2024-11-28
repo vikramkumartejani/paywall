@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         customRed: '#EC543B',  
       },
+      rotate: {
+        'custom-rotation': '-7.41deg',
+      }
     },
   },
   plugins: [],
