@@ -47,7 +47,7 @@ export default function AgePage() {
           </Link>
 
           <Link
-            href="/upload"
+            href="/uploadphoto"
             className={`bg-[#FFCCDE] flex items-center pt-1.5 justify-center gap-1 text-[#DB4126] w-[106px] rounded-lg tracking-[0.64px] text-[24px] font-bold ${!age && "opacity-50 cursor-not-allowed"}`}
           >
             NEXT <img src="/next.svg" className="-mt-1.5" alt="Next" />
