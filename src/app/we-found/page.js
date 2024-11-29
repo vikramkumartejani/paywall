@@ -25,7 +25,7 @@ const WeFound = () => {
       <div className="grid grid-cols-3 gap-1.5">
         {Array(6)
           .fill("")
-          .map((_, index) => (
+          .map((_) => (
             <div>
               <Image
                 src="/profile-card.svg"

@@ -82,20 +82,21 @@ export default function UploadPhotoPage() {
             />
           </label>
         </div>
-        <div className="mt-12 fixed bottom-2 left-1/2 -translate-x-1/2 flex w-full px-4 justify-between gap-6">
+
+        <div className="mt-12 fixed bottom-2 md:bottom-12 left-1/2 -translate-x-1/2 flex w-full px-4 md:px-9 justify-between gap-6">
           <Link
             href="/location"
-            className="bg-[#EDECFB] flex items-center pt-1.5 justify-center w-[90px] text-[#3B42C4] rounded-lg"
+            className="bg-[#EDECFB] flex items-center pt-1.5 justify-center w-[90px] text-[24px] gap-1 text-[#3B42C4] rounded-lg tracking-[0.64px] font-bold"
           >
-            BACK
+           <img src="/previous.svg" className="-mt-1.5" alt="Previous" />  BACK
           </Link>
           <Link
             href="/we-found"
-            className={`bg-[#FFCCDE] flex items-center pt-1.5 justify-center gap-1 text-[#DB4126] w-[106px] rounded-lg ${
+            className={`bg-[#FFCCDE] flex items-center pt-1.5 justify-center gap-1 text-[#DB4126] w-[106px] rounded-lg tracking-[0.64px] text-[24px] font-bold ${
               !uploadedPhoto ? "opacity-50" : "hover:opacity-90"
             } transition`}
           >
-            NEXT
+            NEXT <img src="/next.svg" className="-mt-1.5" alt="Next" />
           </Link>
         </div>
       </div>
